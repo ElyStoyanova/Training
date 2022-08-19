@@ -20,6 +20,11 @@ namespace Exerciise_1
             groups["Signal"].Add("Todor");
             groups["Signal"].Add("Viktor");
 
+            groups.Add("Impuls", new List<string>());
+            groups["Impuls"].Add("Didi");
+            groups["Impuls"].Add("Niki");
+            groups["Impuls"].Add("Pepi");
+
             var newGroups = new Dictionary<string, List<string>>();
             newGroups = groups.Take(1).ToDictionary(x => x.Key, x => x.Value);
 
